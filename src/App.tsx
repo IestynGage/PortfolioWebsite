@@ -1,4 +1,3 @@
-import React from 'react';
 import BusinessCard from './Components/BusinessCard';
 
 function App() {
