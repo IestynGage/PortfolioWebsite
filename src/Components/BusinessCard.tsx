@@ -20,9 +20,9 @@ function BusinessCard() {
               </div>
               <span style={{display:'flex', flexDirection:'row'}}>
                 <ButtonLink href={''} label={'About me'} />
-                <ButtonLink href={'https://github.com/IestynGage'} label={'GitHub'} />  
-                <ButtonLink href={'https://www.linkedin.com/in/iestyngage/'} label={'linkedIn'} />
-                <ButtonLink href={'mailto:iestyngage@gmail.com'} label={'Email'} />
+                <ButtonLink newTab href={'https://github.com/IestynGage'} label={'GitHub'} />  
+                <ButtonLink newTab href={'https://www.linkedin.com/in/iestyngage/'} label={'linkedIn'} />
+                <ButtonLink newTab href={'mailto:iestyngage@gmail.com'} label={'Email'} />
               </span>
           </Paper>
       </div>
