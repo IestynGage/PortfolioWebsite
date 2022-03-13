@@ -20,12 +20,12 @@ function ButtonLink({
     <Button
       variant="contained"
       href={href}
-      style={{ ...style }}
+      style={{ ...style, color: style?.color ?? "white" }}
       onClick={onClick}
     >
       <a
         style={{
-          color: fontColor ?? "white",
+          color: "inherit",
           textDecoration: "none",
           fontWeight: 510,
         }}

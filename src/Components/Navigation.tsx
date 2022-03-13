@@ -42,8 +42,8 @@ export default function Navigation() {
           marginLeft: "auto",
           justifySelf: "right",
           backgroundColor: "white",
+          color: "#1976d2",
         }}
-        fontColor={"#1976d2"}
       />
     </span>
   );
