@@ -1,6 +1,6 @@
 import Navigation from "../../Components/Navigation";
 
-export default function HomeScreen() {
+export default function IestynScreen() {
   return (
     <>
       <Navigation />

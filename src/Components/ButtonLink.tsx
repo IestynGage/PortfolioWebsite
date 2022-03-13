@@ -1,28 +1,34 @@
 import { Button } from "@mui/material";
+import { CSSProperties } from "react";
 
 interface ButtonLinkProps {
   href?: string;
   onClick?: () => void;
   label: string;
-  newTab?: boolean;
-  download?: boolean | undefined;
+  fontColor?: string;
+  style?: CSSProperties;
 }
 
 function ButtonLink({
   label,
   href,
+  fontColor,
   onClick,
-  newTab = false,
-  download,
+  style,
 }: ButtonLinkProps) {
   return (
-    <Button variant="contained" style={{ margin: "0 10px 0 0px" }}>
+    <Button
+      variant="contained"
+      href={href}
+      style={{ ...style }}
+      onClick={onClick}
+    >
       <a
-        href={href}
-        onClick={onClick}
-        style={{ color: "white", textDecoration: "none", fontWeight: 510 }}
-        target={newTab ? "_blank" : ""}
-        download={download}
+        style={{
+          color: fontColor ?? "white",
+          textDecoration: "none",
+          fontWeight: 510,
+        }}
       >
         {label}
       </a>

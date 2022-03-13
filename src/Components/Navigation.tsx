@@ -2,32 +2,49 @@ import { useNavigate } from "react-router-dom";
 import ButtonLink from "./ButtonLink";
 
 export default function Navigation() {
-  const name = "Iestyn Gage";
-  const currentRole = "Junior Software Engineer";
-  const currentCompany = "CoreFiling";
   const navigate = useNavigate();
 
   return (
-    <span style={{ display: "flex", flexDirection: "row" }}>
+    <span
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        backgroundColor: "#1566b7",
+        padding: "6px",
+        borderRadius: "4px",
+      }}
+    >
       <ButtonLink
         label={"Iestyn Gage"}
         onClick={() => {
-          navigate("/home");
+          navigate("/iestyn");
         }}
+        style={{ margin: "0 10px 0 0px" }}
       />
       <ButtonLink
         label={"Portfolio"}
         onClick={() => {
           navigate("/portfolio");
         }}
+        style={{ margin: "0 10px 0 0px" }}
       />
       <ButtonLink
         label={"Contact Me"}
         onClick={() => {
           navigate("/contact");
         }}
+        style={{ margin: "0 10px 0 0px" }}
       />
-      <ButtonLink href={"cv.pdf"} label={"Download CV"} download={true} />
+      <ButtonLink
+        href={"cv.pdf"}
+        label={"Download CV"}
+        style={{
+          marginLeft: "auto",
+          justifySelf: "right",
+          backgroundColor: "white",
+        }}
+        fontColor={"#1976d2"}
+      />
     </span>
   );
 }
