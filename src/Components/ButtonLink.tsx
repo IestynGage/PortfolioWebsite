@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 
 interface ButtonLinkProps {
-  href?:string;
+  href?: string;
   onClick?: () => void;
   label: string;
   newTab?: boolean;

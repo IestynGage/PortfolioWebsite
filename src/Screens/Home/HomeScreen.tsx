@@ -1,12 +1,10 @@
 import Navigation from "../../Components/Navigation";
 
 export default function HomeScreen() {
-
-    return (
-        <>
-
-        <Navigation />   
+  return (
+    <>
+      <Navigation />
       <p> Home Screen</p>
-      </>
-    );
-  }
+    </>
+  );
+}

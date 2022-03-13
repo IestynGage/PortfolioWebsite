@@ -1,12 +1,10 @@
 import Navigation from "../../Components/Navigation";
 
 export default function PortfolioScreen() {
-
-    return (
-        <>
-
-        <Navigation />   
+  return (
+    <>
+      <Navigation />
       <p> Portfolio</p>
-      </>
-    );
-  }
+    </>
+  );
+}
