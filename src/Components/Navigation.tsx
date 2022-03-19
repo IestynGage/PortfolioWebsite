@@ -1,9 +1,10 @@
+import { useMediaQuery } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import ButtonLink from "./ButtonLink";
 
 export default function Navigation() {
   const navigate = useNavigate();
-
+  const largeWidth = useMediaQuery("(min-width: 580px)");
   return (
     <span
       style={{
@@ -12,10 +13,12 @@ export default function Navigation() {
         backgroundColor: "#1566b7",
         padding: "6px",
         borderRadius: "4px",
+        position: "sticky",
+        top: "8px",
       }}
     >
       <ButtonLink
-        label={"Iestyn Gage"}
+        label={largeWidth ? "Iestyn Gage" : "Iestyn"}
         onClick={() => {
           navigate("/iestyn");
         }}
@@ -29,7 +32,7 @@ export default function Navigation() {
         style={{ margin: "0 10px 0 0px" }}
       />
       <ButtonLink
-        label={"Contact Me"}
+        label={largeWidth ? "Contact Me" : "Contact"}
         onClick={() => {
           navigate("/contact");
         }}
@@ -37,12 +40,13 @@ export default function Navigation() {
       />
       <ButtonLink
         href={"cv.pdf"}
-        label={"Download CV"}
+        label={largeWidth ? "Download CV" : "CV"}
         style={{
           marginLeft: "auto",
           justifySelf: "right",
           backgroundColor: "white",
           color: "#1976d2",
+          opacity: 1,
         }}
       />
     </span>

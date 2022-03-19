@@ -10,7 +10,6 @@ export default function ContactScreen() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-
           height: "80vh",
           fontFamily: "Roboto, Helvetica, Arial, sans-serif ",
         }}

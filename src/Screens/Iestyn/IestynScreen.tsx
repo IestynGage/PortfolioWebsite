@@ -12,7 +12,9 @@ export default function IestynScreen() {
           flexDirection: "column",
         }}
       >
-        <h1> Hello, this is my personal website :)</h1>
+        <h1 style={{ padding: "24px", textAlign: "center" }}>
+          Hello, this is my personal website :)
+        </h1>
         <div style={{ padding: "24px", textAlign: "center" }}>
           <p>
             I'm a software engineer with over 1 years experience currently based
