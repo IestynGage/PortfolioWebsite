@@ -33,6 +33,12 @@ const repositories: Repository[] = [
     tags: ["Java", "JavaFX", "AI"],
   },
   {
+    title: "Premium Bonds Simulator",
+    href: "https://github.com/IestynGage/NSI_PremiumBondsSimulator",
+    description: "Simulated the possible outcomes of premium bonds for a group of accounts",
+    tags: ["Java"]
+  },
+  {
     title: "Fibonacci Sequence",
     href: "https://github.com/IestynGage/Fibonacci_Sequence",
     description:
@@ -46,12 +52,12 @@ const repositories: Repository[] = [
       "A react card component that quizes the user on what months precieved after each one",
     tags: ["React"],
   },
-  // {
-  //   title: "git hooks",
-  //   href: "www.google.com",
-  //   description: "Some git hooks I've developed ",
-  //   tags: ["bash"],
-  // },
+  {
+    title: "SchoolGradesDB",
+    href: "https://github.com/IestynGage/SchoolGradesDB",
+    description: "A simple command line tool to interactive with school database ",
+    tags: ["python", "MongoDB"],
+  },
 ];
 
 export default class PortfolioAPI {
