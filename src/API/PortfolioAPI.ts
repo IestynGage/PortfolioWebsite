@@ -35,8 +35,9 @@ const repositories: Repository[] = [
   {
     title: "Premium Bonds Simulator",
     href: "https://github.com/IestynGage/NSI_PremiumBondsSimulator",
-    description: "Simulated the possible outcomes of premium bonds for a group of accounts",
-    tags: ["Java"]
+    description:
+      "Simulated the possible outcomes of premium bonds for a group of accounts",
+    tags: ["Java"],
   },
   {
     title: "Fibonacci Sequence",
@@ -55,7 +56,8 @@ const repositories: Repository[] = [
   {
     title: "SchoolGradesDB",
     href: "https://github.com/IestynGage/SchoolGradesDB",
-    description: "A simple command line tool to interactive with school database ",
+    description:
+      "A simple command line tool to interactive with school database ",
     tags: ["python", "MongoDB"],
   },
 ];

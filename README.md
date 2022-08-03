@@ -22,6 +22,6 @@ $ yarn
 
 # Scripts
 
-* `yarn start` - Runs the react application and opens a webpage to localhost to display the application.
-* `yarn test` - Not like this will ever needed to be run lmao.
-* `yarn storybook` - Runs a component inspector which is able to view all exported storybook compnonets.
+- `yarn start` - Runs the react application and opens a webpage to localhost to display the application.
+- `yarn test` - Not like this will ever needed to be run lmao.
+- `yarn storybook` - Runs a component inspector which is able to view all exported storybook compnonets.
